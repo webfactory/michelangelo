@@ -13,7 +13,7 @@ $kss-nav-item-link-active: $cowabunga;
   height: 100%;
   color: $black;
   background: $white;
-  font-family: 'Lato', sans-serif;
+  font-family: inherit;
   font-weight: 400;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
