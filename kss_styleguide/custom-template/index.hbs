@@ -7,10 +7,34 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="generator" content="kss-node">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
     {{{styles}}}
+
+    <script>
+      (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+      (function(H) {
+          if (sessionStorage.fontsLoaded) {
+              H.classList.add("fonts-loaded");
+          } else {
+              var script = document.createElement("script");
+              script.src = "{{ asset('../js/critical.js') }}";
+              script.async = true;
+
+              script.onload = function () {
+                  var r = new FontFaceObserver("Roboto");
+                  var b = new FontFaceObserver("Roboto", {weight: "700"});
+                  var i = new FontFaceObserver("Roboto", {style: "italic"});
+
+                  Promise.all([r.load(),b.load(),i.load()]).then(function () {
+                      H.classList.add("fonts-loaded");
+                      sessionStorage.fontsLoaded = true;
+                  });
+              };
+              document.head.appendChild(script);
+          }
+      })(document.documentElement);
+    </script>
   </head>
 
   <body class="kss-body">
