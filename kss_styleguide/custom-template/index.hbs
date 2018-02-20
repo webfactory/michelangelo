@@ -18,7 +18,7 @@
               H.classList.add("fonts-loaded");
           } else {
               var script = document.createElement("script");
-              script.src = "{{ asset('../js/critical.js') }}";
+              script.src = "../js/critical.js";
               script.async = true;
 
               script.onload = function () {
