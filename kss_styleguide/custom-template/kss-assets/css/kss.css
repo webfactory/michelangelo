@@ -297,7 +297,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 20px;
-  padding-top: 80px;
+  padding-top: 120px;
   background: #FFFFFF;
   transition: opacity 0.4s ease-out; }
   .kss-documentation.kss-state-active {
@@ -419,7 +419,6 @@
 .kss-section__modifiers {
   border: 1px solid #CCCCCC;
   border-top: none;
-  border-bottom: none;
   padding: 1em;
   background: #FDFDFD; }
 
