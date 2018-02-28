@@ -1,4 +1,4 @@
-# Michelangelo Styleguide
+# Hygieia Styleguide (based on github.com/stamkracht/michelangelo)
 [![npm version](https://badge.fury.io/js/michelangelo.svg)](https://badge.fury.io/js/michelangelo)
 
 
@@ -9,13 +9,13 @@
 - [Get started](#get-started)
 - [Usage](#usage)
     + [KSS-node and documentation syntax](#kss-node-and-documentation-syntax)
-    + [Michelangelo specifications](#michelangelo-specifications)
+    + [Hygieia specifications](#hygieia-specifications)
 - [Customize](#customize)
 
 
 
 ## About
-This is a custom template for the KSS-node living style guide.
+This is a custom template for the KSS-node living style guide. 
 
 
 
@@ -29,15 +29,15 @@ Go to your project directory. If you haven't installed KSS-node yet, install it 
 
 **Don't install KSS-node globally, it will cause problems in the long run when you have multiple projects using KSS-node.*
 
-Now, install the Michelangelo package locally.
+Now, install the Hygieia package locally.
 
 ```
-npm install michelangelo --save-dev
+npm install hygieia --save-dev
 ```
 
 Create a kss-config file `touch kss-config.json` and specify the required config:
   - title
-  - builder: *refer to the Michelangelo template*
+  - builder: *refer to the Hygieia template*
   - source
   - destination
   - homepage
@@ -47,12 +47,12 @@ Create a kss-config file `touch kss-config.json` and specify the required config
 Read [the KSS-node docs](https://github.com/kss-node/kss-node#using-the-command-line-tool) for more information about the config, or use the example below. *Note: the source config should refer to your styles directory.*
 ```
 {
-  "title"        : "Michelangelo Styleguide",
+  "title"        : "Hygieia Styleguide",
   "mask"         : "*.scss",
   "placeholder"  : "[modifier]",
 
 "//": "relative to this file.",
-  "builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "builder"      : "node_modules/hygieia/kss_styleguide/custom-template/",
   "source"       : "src/",
   "destination"  : "kss_styleguide/styleguide/",
 
@@ -83,7 +83,7 @@ To get familiar with the documentation syntax it is highly advised to read throu
 When you're dealing with a high amount of example markup and you don't want to cause any code-bloat, seperate your example markup from your css modules. Create a directory in your kss_styleguide directory (name it anyway you want), and place the markup files in there. In your css module, link to the file for your example markup. (e.g., `Markup: ../kss_styleguide/markup/components.form.html`)
 
 
-### Michelangelo specifications
+### Hygieia specifications
 
 #### Color grid
 This is a grid overview of all your project colors. Every color item consists of 4 parts (the color variable and hexadecimal are required).
@@ -101,7 +101,7 @@ In the example below you can see we have a heading, a description, and we list o
 // $leonardo      -  #2980b9; Leader blue
 // $donatello     -  #8e44ad; Purple tech
 // $raphael       -  #c0392b; Sai
-// $michelangelo  -  rgb(232, 126, 4); Cowabunga
+apollon
 // $splinter      -  #FDE3A7
 //
 // Styleguide Settings.Colors
