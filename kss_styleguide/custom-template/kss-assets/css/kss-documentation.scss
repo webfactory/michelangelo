@@ -191,4 +191,8 @@ $kss-modifiers-name-color: $cowabunga;
   &:last-child { margin-bottom: 0; }
 }
 
-.kss-section__markup pre[class*=language-] { margin: 0; }
+.kss-section__markup {
+  display: none; // temporär Markup nicht anzeigen
+
+  pre[class*=language-] { margin: 0; }
+}
