@@ -5,7 +5,7 @@
 
 .kss-title {
   margin: 0;
-  color: #E87E04;
+  color: #00689c;
   text-align: center;
   font-size: 1.5rem;
   font-family: inherit;
@@ -23,9 +23,9 @@
   width: 100%;
   min-height: 50px;
   padding: 10px;
-  color: #E87E04;
+  color: #00689c;
   background: #FFFFFF;
-  font-family: 'Lato', sans-serif;
+  font-family: inherit;
   font-weight: 400; }
   @media only screen and (min-width: 64.125em) {
     .kss-header {
@@ -57,8 +57,8 @@
   margin-top: 13px;
   margin-bottom: 13px;
   border-radius: 5px;
-  color: #E87E04;
-  background: #E87E04;
+  color: #00689c;
+  background: #00689c;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -69,7 +69,7 @@
     position: absolute;
     width: 30px;
     height: 4px;
-    background: #E87E04;
+    background: #00689c;
     transition: all 0.5s; }
   .kss-header__hamburger:before {
     top: -8px;
@@ -99,7 +99,7 @@
   height: 100%;
   color: #222222;
   background: #FFFFFF;
-  font-family: 'Lato', sans-serif;
+  font-family: inherit;
   font-weight: 400;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out; }
@@ -155,11 +155,11 @@
   letter-spacing: normal;
   transition: color 0.3s; }
   .kss-nav__item a:hover {
-    color: #E87E04; }
+    color: #00689c; }
   .kss-nav__item a:hover .kss-nav__name {
     transform: translateX(6px); }
   .kss-nav__item a.kss-state-active {
-    color: #E87E04; }
+    color: #00689c; }
   .kss-nav__item a.kss-state-active:hover .kss-nav__name {
     transform: none; }
 
@@ -208,7 +208,7 @@
   .kss-markdown h1, .kss-markdown h2, .kss-markdown h3, .kss-markdown h4, .kss-markdown h5, .kss-markdown h6 {
     margin: 0;
     color: #222222;
-    font-family: 'Lato', sans-serif;
+    font-family: inherit;
     font-weight: 400;
     line-height: 1.5; }
   .kss-markdown a {
@@ -221,7 +221,7 @@
     outline: 0; }
   .kss-markdown h1,
   .kss-markdown h2 {
-    color: #E87E04;
+    color: #00689c;
     font-weight: 700; }
   .kss-markdown h2 {
     margin-top: 3rem; }
@@ -230,7 +230,7 @@
   .kss-markdown h5,
   .kss-markdown h6 {
     margin-top: 1.5rem;
-    color: #E87E04;
+    color: #00689c;
     font-weight: 700; }
   .kss-markdown h1 {
     font-size: 2rem; }
@@ -319,11 +319,8 @@
 .kss-section__content {
   border: 1px solid #CCCCCC;
   padding: 1em; }
-  .kss-section__content ol,
-  .kss-section__content ul,
-  .kss-section__content p,
   .kss-section__content a {
-    font-family: 'Lato', sans-serif;
+    font-family: inherit;
     font-weight: 400;
     line-height: 1.5; }
 
@@ -333,9 +330,9 @@
 .kss-section__item {
   margin: 0;
   margin-bottom: 5px;
-  color: #E87E04;
+  color: #00689c;
   font-size: 2rem;
-  font-family: 'Lato', sans-serif;
+  font-family: inherit;
   font-weight: 400;
   text-transform: none;
   letter-spacing: normal; }
@@ -384,7 +381,7 @@
   .kss-section__description p,
   .kss-section__description a {
     color: #222222;
-    font-family: 'Lato', sans-serif;
+    font-family: inherit;
     font-weight: 400;
     line-height: 1.5; }
   .kss-section__description ol,
@@ -416,6 +413,7 @@
 .kss-section__source {
   margin: 0;
   color: gray;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.875rem; }
 
 .kss-section__modifiers {
@@ -428,17 +426,17 @@
 .kss-modifiers__heading {
   margin: 0;
   margin-bottom: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: inherit;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #E87E04; }
+  color: #00689c; }
 
 .kss-modifiers__name {
   margin: 0;
   margin-bottom: 5px;
   font-size: 1rem;
   font-weight: 400;
-  color: #E87E04; }
+  color: #00689c; }
 
 .kss-modifiers__description {
   margin: 0; }
