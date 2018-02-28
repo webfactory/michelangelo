@@ -101,7 +101,7 @@ In the example below you can see we have a heading, a description, and we list o
 // $leonardo      -  #2980b9; Leader blue
 // $donatello     -  #8e44ad; Purple tech
 // $raphael       -  #c0392b; Sai
-apollon
+// $michelangelo  -  rgb(232, 126, 4); Cowabunga
 // $splinter      -  #FDE3A7
 //
 // Styleguide Settings.Colors
