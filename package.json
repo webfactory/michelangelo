@@ -1,10 +1,10 @@
 {
   "name": "hygieia",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hygieia (in griech. Mythologie eine Göttin der Gesundheit und Schutzpatronin der Apotheker) ist ein maßgeschneidertes Theme für den KSS-basierten 'living style guide' des Gemeinsamen Bundesausschusses (G-BA).",
-  "repository": "https://github.com/webfactory/hygieia.git",
+  "repository": "https://github.com/webfactory/michelangelo.git#gemeinsamer-bundesausschuss",
   "license": "MIT",
-  "homepage": "https://github.com/webfactory/hygieia",
+  "homepage": "https://github.com/webfactory/michelangelo/tree/gemeinsamer-bundesausschuss",
   "scripts": {
     "kss": "kss --config kss-config.json",
     "kss:show": "opn kss_styleguide/styleguide/index.html"
