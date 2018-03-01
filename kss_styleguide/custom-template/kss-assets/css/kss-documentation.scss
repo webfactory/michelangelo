@@ -28,10 +28,17 @@ $kss-modifiers-name-color: $cowabunga;
 }
 
 .kss-section { margin-bottom: 40px; }
+.kss-section--depth-3 { margin-bottom: 15px; }
+.kss-section--depth-3 + .kss-section--depth-2 { margin-top: 40px; }
+.kss-section--depth-2 + .kss-section--depth-3 { margin-top: -25px; }
 
 .kss-section__content {
   border: 1px solid $gray;
   padding: 1em;
+
+  .kss-section--depth-2 & {
+    background-color: #e9e9e9;
+  }
 
   a {
     font-family: inherit;
@@ -147,7 +154,7 @@ $kss-modifiers-name-color: $cowabunga;
   margin: 0;
   color: darken($gray, 30%);
   font-family: $monospace;
-  font-size: rem(14px);
+  font-size: rem(12px);
 }
 
 .kss-section__modifiers {
