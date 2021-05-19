@@ -12,56 +12,51 @@
     {{{styles}}}
 
     <style>
-        /* roboto-300 - latin */
+        /* Lemon Sans Next Regular 300 */
         @font-face {
-            font-family: 'Roboto';
+            font-family: 'Lemon';
             font-style: normal;
             font-weight: 300;
             src:
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
         }
-
-        /* roboto-regular - latin */
+        /* Lemon Sans Next Regular 400 */
         @font-face {
-            font-family: 'Roboto';
+            font-family: 'Lemon';
             font-style: normal;
             font-weight: 400;
             src:
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
         }
-
-        /* roboto-italic - latin */
+        /* Lemon Sans Next Regular Italic 300 */
         @font-face {
-            font-family: 'Roboto';
+            font-family: 'Lemon';
             font-style: italic;
             font-weight: 400;
             src:
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-RegularItalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-RegularItalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
         }
-
-        /* Hinweis: als fetten Schnitt verwenden wir die Roboto Medium! */
-
-        /* roboto-500 - latin */
+        /* Hinweis: als fetten Schnitt verwenden wir die Lemon Medium! */
+        /* Lemon Sans Next Medium 700 */
         @font-face {
-            font-family: 'Roboto';
+            font-family: 'Lemon';
             font-style: normal;
             font-weight: 700;
             src:
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-Medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
         }
-
-        /* roboto-500italic - latin */
+        /* Lemon Sans Next Medium Italic 700 */
         @font-face {
-            font-family: 'Roboto';
+            font-family: 'Lemon';
             font-style: italic;
             font-weight: 700;
             src:
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('/bundles/gbadesignsystem/fonts/roboto-v18-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-MediumItalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url('/bundles/gbadesignsystem/fonts/LemonSansNext-MediumItalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
         }
     </style>
 
@@ -76,9 +71,9 @@
               script.async = true;
 
               script.onload = function () {
-                  var r = new FontFaceObserver("Roboto");
-                  var b = new FontFaceObserver("Roboto", {weight: "700"});
-                  var i = new FontFaceObserver("Roboto", {style: "italic"});
+                  var r = new FontFaceObserver("Lemon");
+                  var b = new FontFaceObserver("Lemon", {weight: "700"});
+                  var i = new FontFaceObserver("Lemon", {style: "italic"});
 
                   Promise.all([r.load(),b.load(),i.load()]).then(function () {
                       H.classList.add("fonts-loaded");
