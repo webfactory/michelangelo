@@ -226,8 +226,8 @@ load-json-file@^1.0.0:
     strip-bom "^2.0.0"
 
 locutus@^2.0.5:
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.16.tgz#1da15532f1d735712a27e35a1caf0ccb7041f6b3"
+  version "2.0.39"
+  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.39.tgz#080277b4c766fdc58c053ecfdbd2ad7254db9d85"
 
 loud-rejection@^1.0.0:
   version "1.6.0"
