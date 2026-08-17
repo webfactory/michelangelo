@@ -10,3 +10,12 @@ $kss-title-color: $cowabunga;
   text-transform: none;
   letter-spacing: normal;
 }
+
+// Das G-BA Logo aus dem Design System Bundle bringt keine width/height mit,
+// sondern nur eine viewBox (185.58 x 25.72).
+.kss-title .gba-logo__image {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}

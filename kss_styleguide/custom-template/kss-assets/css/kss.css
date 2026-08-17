@@ -13,6 +13,12 @@
   text-transform: none;
   letter-spacing: normal; }
 
+.kss-title .gba-logo__image {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto; }
+
 .kss-header {
   z-index: 900;
   position: fixed;
