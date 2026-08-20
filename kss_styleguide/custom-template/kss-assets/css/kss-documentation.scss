@@ -132,13 +132,14 @@ $kss-modifiers-name-color: $cowabunga;
   }
 
   a {
-    color: $blue;
+    color: var(--dunkelblau, #{$link});
     text-decoration: none;
   }
 
+  // Beim Hover nur unterstreichen, nicht aufhellen: Ein hellerer Ton würde den
+  // Kontrastgewinn gegen den grauen Hintergrund wieder aufgeben.
   a:hover,
   a:focus {
-    color: lighten($blue, 15%);
     text-decoration: underline;
     outline: 0;
   }
@@ -147,6 +148,23 @@ $kss-modifiers-name-color: $cowabunga;
     display: inline-block;
     padding: 2px 5px;
     background: #F5F5F5;
+  }
+
+  pre {
+    overflow: auto;
+    border: 1px solid $gray;
+    padding: 1em;
+    background: #F5F5F5;
+    font-family: $monospace;
+  }
+
+  // Im Codeblock darf das inline-block-Styling von oben nicht greifen,
+  // sonst verrutschen die Spalten von ASCII-Grafiken.
+  pre code {
+    display: inline;
+    padding: 0;
+    background: none;
+    font-family: inherit;
   }
 }
 

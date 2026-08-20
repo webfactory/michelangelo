@@ -68,7 +68,7 @@
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: all 0.4s; }
   .kss-header__hamburger:before, .kss-header__hamburger:after {
     content: '';
@@ -217,12 +217,12 @@
     font-weight: 400;
     line-height: 1.5; }
   .kss-markdown a {
-    color: #3498DB;
+    color: var(--dunkelblau, #003758);
     font-size: 1rem;
     text-decoration: none; }
   .kss-markdown a:hover,
   .kss-markdown a:focus {
-    color: #75b9e7;
+    text-decoration: underline;
     outline: 0; }
   .kss-markdown h1,
   .kss-markdown h2 {
@@ -414,17 +414,27 @@
     margin: 0;
     font-size: 1rem; }
   .kss-section__description a {
-    color: #3498DB;
+    color: var(--dunkelblau, #003758);
     text-decoration: none; }
   .kss-section__description a:hover,
   .kss-section__description a:focus {
-    color: #75b9e7;
     text-decoration: underline;
     outline: 0; }
   .kss-section__description code {
     display: inline-block;
     padding: 2px 5px;
     background: #F5F5F5; }
+  .kss-section__description pre {
+    overflow: auto;
+    border: 1px solid #CCCCCC;
+    padding: 1em;
+    background: #F5F5F5;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+  .kss-section__description pre code {
+    display: inline;
+    padding: 0;
+    background: none;
+    font-family: inherit; }
 
 .kss-section__source {
   margin: 0;

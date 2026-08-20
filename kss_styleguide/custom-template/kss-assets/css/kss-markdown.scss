@@ -29,14 +29,15 @@ $kss-markdown-headings-color: $cowabunga;
   }
 
   a {
-    color: $blue;
+    color: var(--dunkelblau, #{$link});
     font-size: rem(16px);
     text-decoration: none;
   }
 
+  // Unterstreichen statt Aufhellen – siehe kss-documentation.scss.
   a:hover,
   a:focus {
-    color: lighten($blue, 15%);
+    text-decoration: underline;
     outline: 0;
   }
 

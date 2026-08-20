@@ -1,6 +1,11 @@
 // primary theme color of the styleguide.
 $cowabunga:       #00689c;
 
+// Linkfarbe im Fließtext: GBA-Dunkelblau, als Fallback für `--dunkelblau` aus dem
+// Design System. Das hellere Blau hatte gegen den grauen Hintergrund der
+// Unterkapitel (`.kss-section--depth-2 .kss-section__content`) zu wenig Kontrast.
+$link:            #003758;
+
 // secondary colors.
 $black:           #222222;
 $gray:            #CCCCCC;
