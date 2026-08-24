@@ -208,7 +208,6 @@
   .kss-markdown figure,
   .kss-markdown pre,
   .kss-markdown address,
-  .kss-markdown a,
   .kss-markdown p,
   .kss-markdown h1, .kss-markdown h2, .kss-markdown h3, .kss-markdown h4, .kss-markdown h5, .kss-markdown h6 {
     margin: 0;
@@ -216,14 +215,6 @@
     font-family: inherit;
     font-weight: 400;
     line-height: 1.5; }
-  .kss-markdown a {
-    color: var(--dunkelblau, #003758);
-    font-size: 1rem;
-    text-decoration: none; }
-  .kss-markdown a:hover,
-  .kss-markdown a:focus {
-    text-decoration: underline;
-    outline: 0; }
   .kss-markdown h1,
   .kss-markdown h2 {
     color: #00689c;
@@ -394,8 +385,7 @@
   line-height: 1.5; }
   .kss-section__description ol,
   .kss-section__description ul,
-  .kss-section__description p,
-  .kss-section__description a {
+  .kss-section__description p {
     color: #222222;
     font-family: inherit;
     font-weight: 400;
@@ -413,13 +403,6 @@
   .kss-section__description p {
     margin: 0;
     font-size: 1rem; }
-  .kss-section__description a {
-    color: var(--dunkelblau, #003758);
-    text-decoration: none; }
-  .kss-section__description a:hover,
-  .kss-section__description a:focus {
-    text-decoration: underline;
-    outline: 0; }
   .kss-section__description code {
     display: inline-block;
     padding: 2px 5px;
