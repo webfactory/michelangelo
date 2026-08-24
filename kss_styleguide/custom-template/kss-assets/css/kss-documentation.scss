@@ -47,7 +47,17 @@ $kss-modifiers-name-color: $cowabunga;
   }
 }
 
-.kss-section__permalink { text-decoration: none; }
+// Das Design System stylt inzwischen jedes <a> global inkl. Hover-Unterstrich
+// (03_elements/_links.scss); der Permalink einer Section-Überschrift soll aber
+// weiterhin unauffällig bleiben, auch beim Hover/Fokus.
+.kss-section__permalink {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
 
 .kss-section__item {
   margin: 0;
@@ -104,10 +114,13 @@ $kss-modifiers-name-color: $cowabunga;
   margin-bottom: 20px;
   line-height: 1.5;
 
+  // `a` steht hier absichtlich nicht mit drin: Links sollen den Standard-Linkstil des
+  // Design Systems bekommen (klassenlose <a> erhalten ihn über `a:not([class]):not([name])`
+  // in 03_elements/_links.scss). Jede Farb- oder text-decoration-Angabe an dieser Stelle
+  // hätte die höhere Spezifität und würde ihn wieder aushebeln.
   ol,
   ul,
-  p,
-  a {
+  p {
     color: $black;
     font-family: inherit;
     font-weight: 400;
@@ -131,22 +144,27 @@ $kss-modifiers-name-color: $cowabunga;
     font-size: rem(16px);
   }
 
-  a {
-    color: $blue;
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus {
-    color: lighten($blue, 15%);
-    text-decoration: underline;
-    outline: 0;
-  }
-
   code {
     display: inline-block;
     padding: 2px 5px;
     background: #F5F5F5;
+  }
+
+  pre {
+    overflow: auto;
+    border: 1px solid $gray;
+    padding: 1em;
+    background: #F5F5F5;
+    font-family: $monospace;
+  }
+
+  // Im Codeblock darf das inline-block-Styling von oben nicht greifen,
+  // sonst verrutschen die Spalten von ASCII-Grafiken.
+  pre code {
+    display: inline;
+    padding: 0;
+    background: none;
+    font-family: inherit;
   }
 }
 
