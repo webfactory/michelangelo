@@ -67,7 +67,13 @@ $kss-nav-item-link-active: $cowabunga;
   letter-spacing: normal;
   transition: color 0.3s;
 
-  &:hover { color: $kss-nav-item-link-active; }
+  // Das Design System stylt inzwischen jedes <a> global inkl. Hover-Unterstrich
+  // (03_elements/_links.scss); Navigationslinks sollen aber weiterhin nur die
+  // Farbe wechseln, ohne Unterstrich.
+  &:hover {
+    color: $kss-nav-item-link-active;
+    text-decoration: none;
+  }
 
   &:hover .kss-nav__name { transform: translateX(6px); }
 

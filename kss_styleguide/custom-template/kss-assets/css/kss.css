@@ -160,7 +160,8 @@
   letter-spacing: normal;
   transition: color 0.3s; }
   .kss-nav__item a:hover {
-    color: #00689c; }
+    color: #00689c;
+    text-decoration: none; }
   .kss-nav__item a:hover .kss-nav__name {
     transform: translateX(6px); }
   .kss-nav__item a.kss-state-active {
@@ -333,6 +334,8 @@
 
 .kss-section__permalink {
   text-decoration: none; }
+  .kss-section__permalink:hover, .kss-section__permalink:focus {
+    text-decoration: none; }
 
 .kss-section__item {
   margin: 0;

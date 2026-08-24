@@ -47,7 +47,17 @@ $kss-modifiers-name-color: $cowabunga;
   }
 }
 
-.kss-section__permalink { text-decoration: none; }
+// Das Design System stylt inzwischen jedes <a> global inkl. Hover-Unterstrich
+// (03_elements/_links.scss); der Permalink einer Section-Überschrift soll aber
+// weiterhin unauffällig bleiben, auch beim Hover/Fokus.
+.kss-section__permalink {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
 
 .kss-section__item {
   margin: 0;
